@@ -26,11 +26,18 @@ if (isValid) {
     // Confronto i due array ed eventualmente cambio il messaggio
     if (firstLength < secondLenght) {
         result = 'L\'array più piccolo è il primo';
+
+        // ! Così se modifico min modificherò anche firstArray (Può andar bene per questo esercizio perchè voglio effettivamente modificare l'array più piccolo)
         min = firstArray;
+        // ! Cosi posso modificare min senza intaccare firstArray
+        // ? min = [...firstArray]
         hasToExtend = true;
     } else if (firstLength > secondLenght) {
         result = 'L\'array più piccolo è il secondo';
+        // ! Così se modifico min modificherò anche secondArray (Può andar bene per questo esercizio perchè voglio effettivamente modificare l'array più piccolo)
         min = secondArray;
+        // ! Cosi posso modificare min senza intaccare secondArray
+        // ? min = [...secondArray];
         hasToExtend = true;
     }
     // Risultato del confronto
@@ -63,6 +70,8 @@ if (isValid) {
         }
         console.log('L\'array più piccolo è stato esteso per eguagliare l\'altro in lunghezza: ');
         console.table(min);
+        console.log(firstArray);
+        console.log(secondArray);
     }
 }
 
