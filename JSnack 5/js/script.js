@@ -10,5 +10,4 @@ for (let i = 0; i < 6; i++) {
         if (num % 2) array.push(num);
     }
 }
-console.log('Lista dei numeri dispari che hai inserito:');
-console.table(array);
+console.log('Lista dei numeri dispari che hai inserito:', array);
