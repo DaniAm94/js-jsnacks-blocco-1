@@ -13,7 +13,7 @@ for (let i = 0; i < fruits.length && !found; i++) {
     const watermelon = 'cocomero';
     if (fruits[i] === watermelon) {
         found = true;
-        result = 'Trovato! Devo solo preparare il cocktail.'
     }
 }
+if (found) result = 'Trovato! Devo solo preparare il cocktail.'
 console.log(result);
